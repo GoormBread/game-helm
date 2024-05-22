@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: game-pod-{{ .Release.Name }}
-   labels:
+    labels:
         app: game-pod-{{ .Release.Name }}
 spec:
   containers:
