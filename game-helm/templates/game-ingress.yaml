@@ -1,0 +1,22 @@
+{{- if not .Values.uniquePath }}
+{{- fail "httpPath 값은 반드시 제공되어야 합니다. 인그레스 객체 생성 실패" }}
+{{- end }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-game
+  annotaions:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: game-ingressclass
+  rules:
+    - http: 
+        paths:
+        - pathType: Prefix
+          path: /play-game/{{ .Values.uniquePath }}
+          backend:
+            service:
+              name: game-service
+              port:
+                number: 80
