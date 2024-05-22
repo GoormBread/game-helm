@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: rtsp-node
-    image: geonhyukseo/goormnes-streaming:5683ef8c4b2387122979b34f02ce272a971eda07
+    image: geonhyukseo/goormnes-streaming:0d99ced3e02e4be6151047344e767464e1700be2
     ports:
     - containerPort: 2000
   - name: nes
