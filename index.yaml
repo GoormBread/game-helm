@@ -3,12 +3,12 @@ entries:
   game-helm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-23T01:19:18.325516+09:00"
+    created: "2024-05-23T01:32:01.135371+09:00"
     description: Game helm chart for GoormBread project
-    digest: c7045386e1f4045db8af9d73cd93e3ec3c4b4e02660114e6785b8b1b6367d53c
+    digest: 3cf036ea3b5326c7fdcc1c68c149fe961366abf55b39b806c50d5c253725ae59
     name: game-helm
     type: application
     urls:
     - game-helm-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-23T01:19:18.324651+09:00"
+generated: "2024-05-23T01:32:01.130434+09:00"
