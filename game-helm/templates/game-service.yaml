@@ -1,7 +1,3 @@
-{{- if not .Values.uniquePath }}
-{{- fail "httpPath 값은 반드시 제공되어야 합니다. 게임 서비스 생성 실패" }}
-{{- end }}
----
 apiVersion: v1
 kind: Service
 metadata:
