@@ -5,7 +5,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-game
+  name: ingress-game-{{ .Release.Name }}
   annotaions:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
@@ -17,6 +17,6 @@ spec:
           path: /test-play/{{ .Values.uniquePath }}
           backend:
             service:
-              name: game-service
+              name: game-service-{{ .Release.Name }}
               port:
                 number: 80
