@@ -14,7 +14,7 @@ spec:
     - http: 
         paths:
         - pathType: Prefix
-          path: /play-game/{{ .Values.uniquePath }}
+          path: /test-play/{{ .Values.uniquePath }}
           backend:
             service:
               name: game-service
