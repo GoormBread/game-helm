@@ -5,10 +5,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: game-service
+  name: game-service-{{ .Release.Name }}
 spec:
   selector:
-    app: game-pod
+    app: game-pod-{{ .Release.Name }}
   ports:
     - protocol: TCP
       port: 80
