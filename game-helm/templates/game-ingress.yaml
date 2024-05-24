@@ -13,7 +13,7 @@ spec:
   rules:
     - http: 
         paths:
-        - pathType: Prefix
+        - pathType: Exact
           path: /test-play/{{ .Values.uniquePath }}
           backend:
             service:
