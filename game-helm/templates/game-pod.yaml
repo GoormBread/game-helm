@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: rtsp-node
-    image: geonhyukseo/goormnes-streaming:2d72de0a77ae7ad9b074ee66bdbb0bb9a634343d
+    image: geonhyukseo/goormnes-streaming:3c6b796b71897ac58834be626b723b31a6d829f7
     env:
       - name: MTX_PATH
         value: mtx-service-{{ .Release.Name }}
