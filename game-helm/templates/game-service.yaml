@@ -10,3 +10,18 @@ spec:
       port: 80
       targetPort: 2000
   type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mtx-service-{{ .Release.Name }}
+spec:
+  selector:
+    app: game-pod-{{ .Release.Name }}
+  ports:
+    - protocol: TCP
+      port: 8554
+      targetPort: 8554
+  type: ClusterIP
+
