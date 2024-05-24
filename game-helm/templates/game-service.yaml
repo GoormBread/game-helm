@@ -7,7 +7,7 @@ spec:
     app: game-pod-{{ .Release.Name }}
   ports:
     - protocol: TCP
-      port: 80
+      port: 2000
       targetPort: 2000
   type: ClusterIP
 

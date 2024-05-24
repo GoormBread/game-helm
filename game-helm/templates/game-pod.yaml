@@ -7,10 +7,12 @@ metadata:
 spec:
   containers:
   - name: rtsp-node
-    image: geonhyukseo/goormnes-streaming:3c6b796b71897ac58834be626b723b31a6d829f7
+    image: geonhyukseo/goormnes-streaming:08654d0a64690cbfb993041da584d170637da585
     env:
       - name: MTX_PATH
         value: mtx-service-{{ .Release.Name }}
+      - name: WS_PATH
+        value: game-service-{{ .Release.Name }}
     ports:
     - containerPort: 2000
   - name: nes

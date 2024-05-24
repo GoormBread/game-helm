@@ -19,4 +19,4 @@ spec:
             service:
               name: game-service-{{ .Release.Name }}
               port:
-                number: 80
+                number: 2000
