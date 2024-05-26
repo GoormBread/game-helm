@@ -8,15 +8,22 @@ metadata:
   name: ingress-game-{{ .Release.Name }}
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    nginx.ingress.kubernetes.io/websocket-services: "game-service-{{ .Release.Name }}"
+    nginx.ingress.kubernetes.io/websocket-services: "game-service-{{ .Release.Name }}:2000"
 spec:
   ingressClassName: game-ingressclass
   
   rules:
     - http: 
         paths:
-        - pathType: Exact
+        - pathType: Prefix
           path: /test-play/{{ .Values.uniquePath }}
+          backend:
+            service:
+              name: game-service-{{ .Release.Name }}
+              port:
+                number: 2000
+        - pathType: Prefix
+          path: /test-play/{{ .Values.uniquePath }}/ws
           backend:
             service:
               name: game-service-{{ .Release.Name }}
