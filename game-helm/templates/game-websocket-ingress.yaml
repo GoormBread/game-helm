@@ -5,9 +5,9 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-game-{{ .Release.Name }}
+  name: ingress-websocket-game-{{ .Release.Name }}
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /api/stream
     nginx.ingress.kubernetes.io/websocket-services: "game-service-{{ .Release.Name }}"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
     nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
@@ -29,7 +29,7 @@ spec:
     - http: 
         paths:
         - pathType: Exact
-          path: /test-play/{{ .Values.uniquePath }}
+          path: /test-play/{{ .Values.uniquePath }}/api/stream
           backend:
             service:
               name: game-service-{{ .Release.Name }}

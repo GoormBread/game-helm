@@ -23,7 +23,7 @@ spec:
     ports:
     - containerPort: 8080
   - name: rtsp-node
-    image: geonhyukseo/goormnes-streaming:0715aea8635de53b421f1af30ddca5bb9a02e7fd
+    image: geonhyukseo/goormnes-streaming:4c3fab745b73ddfbb8fd4223da5f1c858f3c0dcb
     env:
       - name: MTX_PATH
         value: mtx-service-{{ .Release.Name }}
