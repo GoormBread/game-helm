@@ -29,7 +29,7 @@ spec:
     - http: 
         paths:
         - pathType: Exact
-          path: /test-play/{{ .Values.uniquePath }}
+          path: /play-groombread/{{ .Values.uniquePath }}
           backend:
             service:
               name: game-service-{{ .Release.Name }}
