@@ -8,6 +8,7 @@ metadata:
   name: ingress-game-{{ .Release.Name }}
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/websocket-services: "game-service-{{ .Release.Name }}"
 spec:
   ingressClassName: game-ingressclass
   
