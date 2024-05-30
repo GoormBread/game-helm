@@ -4,4 +4,4 @@ nes-streaming:
 nes:
   image: geonhyukseo/goormnes
     tag: 4bc4e4a2863f6af659b9418d4b02db55bbc79e81
-uniquePath:
+uniquePath: ""
