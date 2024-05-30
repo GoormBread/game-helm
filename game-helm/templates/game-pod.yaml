@@ -19,11 +19,11 @@ spec:
     - containerPort: 8890
     - containerPort: 8189
   - name: nes
-    image: geonhyukseo/goormnes:4bc4e4a2863f6af659b9418d4b02db55bbc79e81
+    image: {{ .Values.nes.image }}:{{ .Values.nes.image.tag }}
     ports:
     - containerPort: 8080
-  - name: rtsp-node
-    image: geonhyukseo/goormnes-streaming:c197b29c2d969a01a39d5b2162972c8d61e68c1a
+  - name: nes-streaming
+    image: {{ .Values.nes-streaming.image }}:{{ .Values.nes-streaming.image.tag }}
     env:
       - name: WS_PATH
         value: {{ .Values.uniquePath }}
