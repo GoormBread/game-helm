@@ -1,9 +1,9 @@
 nes-streaming:
   image:
-      name: geonhyukseo/goormnes-streaming
-      tag: c197b29c2d969a01a39d5b2162972c8d61e68c1a
+    name: geonhyukseo/goormnes-streaming
+    tag: 8fe8545910c1b5a80dd24876024fa08af8b93bcf
 nes:
   image:
-      name: geonhyukseo/goormnes
-      tag: 4bc4e4a2863f6af659b9418d4b02db55bbc79e81
+    name: geonhyukseo/goormnes
+    tag: 4bc4e4a2863f6af659b9418d4b02db55bbc79e81
 uniquePath: ""
