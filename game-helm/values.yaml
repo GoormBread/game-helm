@@ -5,5 +5,5 @@ nes-streaming:
 nes:
   image:
     name: geonhyukseo/goormnes
-    tag: 4bc4e4a2863f6af659b9418d4b02db55bbc79e81
+    tag: 3408a20e1a150b015a6451557a7e5590c52bfdf1
 uniquePath: ""
