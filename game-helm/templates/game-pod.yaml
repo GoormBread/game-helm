@@ -23,7 +23,7 @@ spec:
     ports:
     - containerPort: 8080
   - name: nes-streaming
-    image: {{ .Values.nes-streaming.image.name }}:{{ .Values.nes-streaming.image.tag }}
+    image: {{ .Values.nesstreaming.image.name }}:{{ .Values.nesstreaming.image.tag }}
     env:
       - name: WS_PATH
         value: {{ .Values.uniquePath }}
