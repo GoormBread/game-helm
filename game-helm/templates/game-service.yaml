@@ -8,13 +8,16 @@ spec:
   selector:
     app: game-pod-{{ .Release.Name }}
   ports:
-    - protocol: TCP
+    - name: port-2000
+      protocol: TCP
       port: 2000
       targetPort: 2000
-    - protocol: TCP
+    - name: port-1201
+      protocol: TCP
       port: 1201
       targetPort: 1201
-    - protocol: TCP
+    - name: port-1014
+      protocol: TCP
       port: 1014 
       targetPort: 1014 
   type: ClusterIP
