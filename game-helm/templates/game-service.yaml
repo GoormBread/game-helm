@@ -11,10 +11,10 @@ spec:
     - protocol: TCP
       port: 2000
       targetPort: 2000
-    - protocole: TCP
+    - protocol: TCP
       port: 1201
       targetPort: 1201
-    - protocole: TCP
+    - protocol: TCP
       port: 1014 
       targetPort: 1014 
   type: ClusterIP
