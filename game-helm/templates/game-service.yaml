@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: game-service-{{ .Release.Name }}
   labels:
-    app: game-pod-{{ .Release.Name }}
+    app: game-service-{{ .Release.Name }}
 spec:
   selector:
     app: game-pod-{{ .Release.Name }}
