@@ -19,13 +19,14 @@ metadata:
         proxycachebypass $httpupgrade;
       }
 spec:
-  ingressClassName: game-ingressclass
+  ingressClassName: paran-ingressclass
   
   rules:
-    - http: 
+    - host: paran2024.iptime.org
+      http: 
         paths:
         - pathType: Exact
-          path: /play-groombread/{{ .Values.uniquePath }}/websocket1
+          path: /play-goormbread/{{ .Values.uniquePath }}/websocket1
           backend:
             service:
               name: game-service-{{ .Release.Name }}
