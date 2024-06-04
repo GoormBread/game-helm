@@ -1,7 +1,7 @@
 nesstreaming:
   image:
     name: geonhyukseo/goormnes-streaming
-    tag: 728613e0e35c8d10c8803c51f3b0e8e6498f346e
+    tag: 1a89a8290a21812cac74f95d9f6b40886add726e
 nes:
   image:
     name: geonhyukseo/goormnes
