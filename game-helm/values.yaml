@@ -7,6 +7,3 @@ nes:
     name: geonhyukseo/goormnes
     tag: 3408a20e1a150b015a6451557a7e5590c52bfdf1
 uniquePath: ""
-nes-streaming:
-  image:
-    tag: 9f7c1d1fbc1ecd3e6a9ff12e34d8aeeffaecbb4a
