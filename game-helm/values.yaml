@@ -6,4 +6,5 @@ nes:
   image:
     name: geonhyukseo/goormnes
     tag: d403c302687e95b46f081e0076e92aff06441ca2
+  gameName: "Bubble Bobble"
 uniquePath: ""

@@ -22,10 +22,13 @@ spec:
     image: {{ .Values.nes.image.name }}:{{ .Values.nes.image.tag }}
     ports:
     - containerPort: 8080
+    env:
+    - name: GAME
+      value: {{ .Values.nes.gameName }}
   - name: nes-streaming
     image: {{ .Values.nesstreaming.image.name }}:{{ .Values.nesstreaming.image.tag }}
     env:
-      - name: WS_PATH
-        value: {{ .Values.uniquePath }}
+    - name: WS_PATH
+      value: {{ .Values.uniquePath }}
     ports:
     - containerPort: 2000
