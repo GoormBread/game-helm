@@ -18,6 +18,9 @@ spec:
     - containerPort: 8889
     - containerPort: 8890
     - containerPort: 8189
+    resources:
+      limits:
+        nvidia.com/gpu: "1"
   - name: nes
     image: {{ .Values.nes.image.name }}:{{ .Values.nes.image.tag }}
     ports:
@@ -25,6 +28,9 @@ spec:
     env:
     - name: GAME
       value: {{ .Values.nes.gameName }}
+    resources:
+      limits:
+        nvidia.com/gpu: "1"
   - name: nes-streaming
     image: {{ .Values.nesstreaming.image.name }}:{{ .Values.nesstreaming.image.tag }}
     env:
@@ -32,3 +38,6 @@ spec:
       value: {{ .Values.uniquePath }}
     ports:
     - containerPort: 2000
+    resources:
+      limits:
+        nvidia.com/gpu: "1"
