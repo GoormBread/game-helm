@@ -5,6 +5,6 @@ nesstreaming:
 nes:
   image:
     name: geonhyukseo/goormnes
-    tag: d403c302687e95b46f081e0076e92aff06441ca2
+    tag: ec55812979d60590b7beb7defe00a6f4280054e9
   gameName: "Bubble Bobble"
 uniquePath: ""
